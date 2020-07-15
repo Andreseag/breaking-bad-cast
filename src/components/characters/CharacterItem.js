@@ -1,6 +1,7 @@
 import React from "react";
 
 const CharacterItem = ({ item }) => {
+  console.log(item);
   return (
     <div className="card">
       <div className="card-inner">
@@ -8,7 +9,7 @@ const CharacterItem = ({ item }) => {
           <img src={item.img} alt="" />
         </div>
         <div className="card-back">
-          <h1>item.name</h1>
+          <h1>{item.name}</h1>
           <ul>
             <li>
               <strong>Actor name:</strong> {item.portrayed}
